@@ -20,7 +20,7 @@ export default function App() {
 
   const getUser = () => {
     axios
-      .post("http://localhost:5000/api/user/get-user", {
+      .post("https://moviebooking-api.vercel.app/api/user/get-user", {
         token: localStorage.getItem("token"),
       })
       .then((result) => {
@@ -39,29 +39,21 @@ export default function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/*" element={<p>Page Not Found!!</p>}/>
-        {!user &&
-        <Route path="/admin/login" element={<Admin />} />
-        }   
-        {!user &&
-        <Route path="/user/login" element={<Auth />} />
-         }
-         {!user &&
-          <Route path="/user/signup" element={<AuthRegister />} />
-         }
-         {!user &&
-          <Route path="/admin/signup" element={<AdminRegister />} />
-         }
-        {user && user.isAdmin &&
+        <Route path="/*" element={<p>Page Not Found!!</p>} />
+        {!user && <Route path="/admin/login" element={<Admin />} />}
+        {!user && <Route path="/user/login" element={<Auth />} />}
+        {!user && <Route path="/user/signup" element={<AuthRegister />} />}
+        {!user && <Route path="/admin/signup" element={<AdminRegister />} />}
+        {user && user.isAdmin && (
           <Route path="/admin/addmovie" element={<AddMovie />} />
-        }
-       
+        )}
+
         <Route path="/" element={<HomePage />} />
-        {user && !user.isAdmin &&
+        {user && !user.isAdmin && (
           <Route path="/auth/booking/:id" element={<Booking />} />
-        }
-        <Route path="/user" element={<UserBooking/>}/>
-        <Route path="/admin" element={<AdminMovies/>}/>
+        )}
+        <Route path="/user" element={<UserBooking />} />
+        <Route path="/admin" element={<AdminMovies />} />
       </Routes>
     </div>
   );

@@ -14,7 +14,7 @@ export default function Booking() {
 const navigate=useNavigate();
 
     const handleBooking=()=>{
-         axios.post("http://localhost:5000/api/booking/book",{
+         axios.post("https://moviebooking-api.vercel.app/api/booking/book",{
           movie:id,
           date:date,
           seatNumber:seat,
@@ -37,7 +37,7 @@ const navigate=useNavigate();
 
     //getting details of movie
     const getMovie=()=>{
-    axios.get(`http://localhost:5000/api/movie/getById/${id}`)
+    axios.get(`https://moviebooking-api.vercel.app/api/movie/getById/${id}`)
     .then((result)=>{
         console.log(result);
         setMovie(result);

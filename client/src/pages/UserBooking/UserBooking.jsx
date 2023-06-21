@@ -7,7 +7,7 @@ export default function UserBooking() {
   const [data, setData] = useState([]);
   const getInfo = () => {
     axios
-      .get(`http://localhost:5000/api/user/getBooking/${user.id}`)
+      .get(`https://moviebooking-api.vercel.app/api/user/getBooking/${user.id}`)
       .then((result) => {
         setData(result.data.bookings);
         console.log(result);

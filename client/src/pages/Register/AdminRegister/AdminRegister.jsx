@@ -8,7 +8,7 @@ export default function AdminRegister() {
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const submitHandler=()=>{
-        axios.post("http://localhost:5000/api/admin/signup",{
+        axios.post("https://moviebooking-api.vercel.app/api/admin/signup",{
           email,
           password
         }).then((result)=>{

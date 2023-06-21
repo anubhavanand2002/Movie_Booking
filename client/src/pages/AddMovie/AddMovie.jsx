@@ -39,7 +39,7 @@ export default function AddMovie() {
 
     await axios
       .post(
-        "http://localhost:5000/api/movie/add-movie",
+        "https://moviebooking-api.vercel.app/api/movie/add-movie",
         {
           title,
           description,

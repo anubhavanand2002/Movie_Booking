@@ -7,7 +7,7 @@ export default function HomePage() {
     
     //function for fetching data from the database
     const handleMovies=async()=>[
-        await axios.get("http://localhost:5000/api/movie/getall-movies")
+        await axios.get("https://moviebooking-api.vercel.app/api/movie/getall-movies")
         .then((result)=>{
             console.log(result);
             setdata(result.data.movies);

@@ -16,7 +16,7 @@ export default function Admin() {
 
   const getUser = () => {
     axios
-      .post("http://localhost:5000/api/user/get-user", {
+      .post("https://moviebooking-api.vercel.app/api/user/get-user", {
         token: localStorage.getItem("token"),
       })
       .then((result) => {
@@ -29,7 +29,7 @@ export default function Admin() {
   };
 
     const submitHandler=()=>{
-        axios.post("http://localhost:5000/api/admin/signin",{
+        axios.post("https://moviebooking-api.vercel.app/api/admin/signin",{
             email,
             password
         }).then((result)=>{
