@@ -1,0 +1,39 @@
+.moviecard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid white;
+    width: 20%;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 3px 3px 3px rgba(161, 159, 159, 0.797);
+    transition: transform 0.5s ease;
+}
+.moviecard-container:hover{
+    transform: translateY(-10px);
+}
+.image img{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.moviecard-container button{
+    background-color: rgb(34, 34, 43);
+    color: white;
+    font-size: large;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.detail p{
+    font-size: large;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.detail h2{
+    font-family: cursive;
+    color: red;
+}

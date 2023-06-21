@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: rgb(24, 200, 213);
+}
+.but{
+    display: flex;
+    justify-content: flex-end;
+    width: 23%;
+    font-size: 20px;
+    font-weight: 25px;
+}
+.input{
+    width: 600px;
+    background-color: white;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.button{
+    padding: 8px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: 350;
+    border-radius: 4px;
+    border: 1px solid  whitesmoke;
+    box-shadow: 1px 1px 1px 1px rgb(52,49,49);
+    cursor: pointer;
+    margin: 0px 5px;
+}
+.container ion-icon{
+    font-size: 40px;
+    color: black;
+}
+.container input::placeholder{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.search ion-icon{
+   font-size: 25px;
+   font-weight: 70px;
+}

@@ -1,0 +1,70 @@
+.col{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booking-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+.description{
+    margin: 30px 40px;
+}
+.description img{
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.h1{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: #4c4c6d;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.book-info{
+   margin: 30px 20px;
+  width: 80%;
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+  padding: 6px;
+  height: 200%;
+  /* border: 2px solid whitesmoke; */
+  
+}
+.book-info button{
+    align-items: center;
+    width: 100%;
+  border: 1px solid white;
+  background-color: red;
+  color: white;
+  margin: 25px 0px;
+  font-size: 20px;
+  font-weight: 40px;
+  cursor: pointer;
+  padding: 10px 2px;
+  border-radius: 5px;
+}
+.seat input{
+    width: 95%;
+}
+.date input{
+    width: 95%;
+}
+.description h4{
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+.description span,li{
+ padding: 0px 10px;
+ font-size: 20px;
+ list-style: none;
+}

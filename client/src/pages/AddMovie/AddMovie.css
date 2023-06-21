@@ -1,0 +1,73 @@
+.add-movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 40%;
+    margin:25px auto;
+}
+.check{
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+}
+.actors-name{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+.actors-name button{
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    color: red;
+    background-color: aqua;
+    padding: 4px;
+    font-weight: 20px;
+    font-size: larger;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+}
+.description{
+    width: 112%;
+}
+.title{
+    font-family: cursive;
+    color: orange;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.display{
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+.display1{
+    border: 2px solid rgb(236, 232, 232);
+    color:black;
+    background-color: blanchedalmond;
+    position: relative;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.display1 ion-icon{
+    position: absolute;
+    top: -10px;right: -10px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.final-submit button{
+    color: white;
+    background-color: rgb(79, 236, 137);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px ;
+    cursor: pointer;
+}
