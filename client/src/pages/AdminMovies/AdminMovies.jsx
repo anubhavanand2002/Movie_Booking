@@ -7,7 +7,7 @@ export default function AdminMovies() {
   const [data, setData] = useState([]);
   const getInfo = () => {
     axios
-      .get(`https://moviebooking-api.vercel.app/api/movie//getall-movies`)
+      .get(`https://moviebooking-api.vercel.app/api/movie/getall-movies`)
       .then((result) => {
         setData(result.data.movies);
         console.log(result);
