@@ -1,0 +1,53 @@
+.check-detail-container {
+    margin: 20px;
+  }
+  .check-detail-container h1{
+    text-align: center;
+    color: orange;
+    font-family: cursive;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .check-detail-container .main-container  .main1-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    color: #333333;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .check-detail-container .main-container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .check-detail-container .main-container .column-title {
+    font-size: 22px;
+    color: #6600CC;
+    background-color: #FFFFFF;
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .check-detail-container .main-container .column-content {
+    font-size: 16px;
+  }
+  
+  .check-detail-container .main-container .booking, .seat, .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3366FF;
+    font-size: 25px;
+  }
+  

@@ -4,6 +4,7 @@ import {
   getBookingById,
   newBooking,
 } from "../controllers/bookingController.js";
+import { getAllBookings } from "../controllers/adminController.js";
 
 const bookingRouter = express.Router();
 

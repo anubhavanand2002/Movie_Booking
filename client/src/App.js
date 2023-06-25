@@ -13,7 +13,7 @@ import axios from "axios";
 import Booking from "./pages/Booking/Booking.jsx";
 import UserBooking from "./pages/UserBooking/UserBooking.jsx";
 import AdminMovies from "./pages/AdminMovies/AdminMovies.jsx";
-
+import CheckDetails from "./pages/CheckDetails/CheckDetails.jsx";
 export default function App() {
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
@@ -54,6 +54,7 @@ export default function App() {
         )}
         <Route path="/user" element={<UserBooking />} />
         <Route path="/admin" element={<AdminMovies />} />
+        <Route path="/check-details" element={<CheckDetails/>}/>
       </Routes>
     </div>
   );

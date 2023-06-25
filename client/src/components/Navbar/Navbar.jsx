@@ -30,9 +30,20 @@ export default function Navbar() {
             <ion-icon name="search"></ion-icon>
       </div>
       <div className='but'>
+
+        {/* for admin only Addmovies is available */}
         {user && user.isAdmin && <Link to="/admin/addmovie">
                 <button className='button'>ADDMOVIES</button>
             </Link>}
+        
+        {/* for admin only check details is available */}
+        {
+          user && user.isAdmin &&
+          <Link to="/check-details">
+            <button className='button'>Check details</button>
+         </Link>
+        }
+
             {user?
             <Link to={user.isAdmin?"/admin":"/user"}>
                 <button className='button' >{user.name}</button>

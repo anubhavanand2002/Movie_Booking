@@ -1,6 +1,8 @@
 import Admin from "../models/Admin.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import Booking from "../models/Booking.js";
+import User from "../models/User.js";
 //register function for admin
 export const register = async (req, res, next) => {
   const { email, password } = req.body;
@@ -104,5 +106,30 @@ export const getAdminById = async (req, res, next) => {
     return res
       .status(500)
       .json({ status: false, message: "Internal Server Error!!" });
+  }
+};
+
+export const getAllBookings = async (req, res) => {
+  try {
+    const bookings = await User.find({}).populate({
+      path: "bookings",
+      populate: {
+        path: "movie",
+        model: "Movie",
+      },
+    });
+
+    console.log(bookings);
+    return res.status(200).json({
+      status: true,
+      message: "Bookings found successfully!!",
+      bookings,
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({
+      status: false,
+      message: "Internal Server error!!",
+    });
   }
 };
